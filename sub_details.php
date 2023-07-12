@@ -5,9 +5,7 @@ $token = $_GET['access_token'];
 if ($subscriptionID == "" OR $token == "") {
   // code...
   header("Location: javascript://history.go(-1)");
-
 }
- 
 ?>
 
 <?php 
@@ -33,7 +31,7 @@ if ($err) {
 } else{  
 
 $response = json_decode($result);
-$email = 'gjhwatters@gmail.com';
+$email = 'companytravail@gmail.com';
 //var_dump($response);
 $status = $response->status; 
 $subscriberID = $response->id;

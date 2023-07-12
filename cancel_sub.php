@@ -1,7 +1,7 @@
 <?php 
 include("database/mydb.php"); 
-$email = 'gjhwatters@gmail.com'; 
-$sql = $con->query("SELECT subscriberID FROM customer_details WHERE session_email = '$email' limit 1".mysqli_error($con)); 
+// $email = 'gjhwatters@gmail.com'; 
+$sql = $con->query("SELECT subscriberID FROM customer_details  limit 1".mysqli_error($con)); 
 if ($sql->num_rows != 0) {
     // code...
     while ($rows = $sql->fetch_assoc()) {

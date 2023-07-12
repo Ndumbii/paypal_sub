@@ -1,7 +1,8 @@
 <?php
 include("database/mydb.php");
-$email = 'smith204@gmail.com';
-$sql = $con->query("SELECT status FROM customer_details WHERE session_email = '$email' limit 1".mysqli_error($con)); 
+// $email = 'smith204@gmail.com';
+$sql = $con->query("SELECT status FROM customer_details  limit 1".mysqli_error($con)); 
+// WHERE session_email = '$email'
  if($sql->num_rows != 0){
     while ($rows = $sql->fetch_assoc()) {
         // code...
@@ -29,7 +30,7 @@ $sql = $con->query("SELECT status FROM customer_details WHERE session_email = '$
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    <!-- Title -->
     <meta name="description" content="">
-    <title>Watch Video</title>
+    <title>Subscription successful</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
@@ -45,15 +46,14 @@ $sql = $con->query("SELECT status FROM customer_details WHERE session_email = '$
 
   <main class="page-content">
     <div class="container-fluid">
-      <h2>Video Streaming Service</h2>
+      <h2>Subscription Successful</h2>
       <hr>
          
                       <br><br>
 
     <div class="row">
          <div class="col-lg-12 col-md-12 col-xl-12">
-            <iframe width="430" height="285" src="https://www.youtube.com/embed/51UUYGq9cjk"></iframe> 
-
+         <!-- <h2>Subscription Successful</h2> -->
 
     </div>
   </div>
