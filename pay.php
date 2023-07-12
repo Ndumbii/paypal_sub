@@ -12,7 +12,7 @@ $token = $_GET['access_token'];
 
 <body>
   <script
-      src="https://www.paypal.com/sdk/js?client-id=AXbdG45D7opAtBbAbOj4dCOe2MXRoroD77wBEshpP2-VrwealpO8VQXmLRFb3jT4AuwXrDhthWQQOfCR&vault=true&intent=subscription">
+      src="https://www.paypal.com/sdk/js?client-id=CLIENTID&vault=true&intent=subscription">
   </script>
     <div id="paypal-button-container"></div>
 <script> var token = '<?php echo $token; ?>'; </script>
